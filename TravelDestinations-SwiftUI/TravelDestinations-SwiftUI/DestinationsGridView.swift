@@ -77,5 +77,6 @@ struct DestinationsGridView: View {
 
 
 #Preview {
-    DestinationsGridView()
+    var dataStore:DataStore = DataStore()
+    DestinationsGridView().environment(dataStore)
 }
