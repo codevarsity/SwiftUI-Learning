@@ -53,7 +53,7 @@ struct DestinationsGridView: View {
             ScrollView (.horizontal){
                 LazyHGrid(rows:topMountainsGrid) {
                     ForEach (dataStore.topMountains, id: \.id) { destination in
-                        DestinationCardView(destination: destination, width: geometry.size.width, height: 200)
+                        DestinationCardView(destination: destination, width: geometry.size.width.scaled(by: 0.85), height: 200)
                     }
                 }
             }.scrollIndicators(.hidden)
